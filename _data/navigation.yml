@@ -1,10 +1,10 @@
 # main links
 main:
   
-  - title: "About"
-    url: https://www.linkedin.com/in/felix-dorfner-a93a3520b/
   - title: "CV"
     url: "/CV.pdf"
+  - title: "About"
+    url: https://www.linkedin.com/in/felix-dorfner-a93a3520b/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

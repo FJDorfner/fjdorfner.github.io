@@ -4,19 +4,25 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">
+  Hey there!
+</h3>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+<img src="/image.jpg" 
+     alt="Felix Dorfner" 
+     width="200">
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
-</div>
+<p>
+  I'm Felix, a German medical student at the Charité, Berlin.
+  I'm passionate about Neuroimaging and AI and currently working 
+  as a research intern with the 
+  <a href="https://qtim-lab.github.io/" target="_blank">
+    QTIM lab
+  </a> 
+  at the 
+  <a href="http://martinos.org/" target="_blank">
+    Athinoula A. Martinos Center for Biomedical Imaging
+  </a>.
+</p>
 
 {% include paginator.html %}
