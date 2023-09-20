@@ -20,7 +20,7 @@ title                    : "Felix Dorfner"
 title_separator          : "-"
 subtitle                 : ""# site tagline that appears below site title in masthead
 name                     : "Felix Dorfner"
-description              : "An amazing website."
+description              : "German medical student, AI and Neuroimaging"
 url                      : "https://www.felixdorfner.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "fjdorfner/fjdorfner.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,8 +104,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Felix Dorfner"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : null
+  avatar           : "/image.jpg"
   bio              : "Medical Student @Charité, Berlin. Interested in AI and Neuroimaging"
   location         : "Boston/Berlin"
   email            :
