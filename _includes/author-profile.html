@@ -6,9 +6,9 @@
 {% if author.avatar %}
   <div class="author__avatar">
     <img src="{{ author.avatar | relative_url }}" 
-         srcset="{{ '/author_image_small.jpg' | relative_url }} 300w,
-                 {{ '/author_image_medium.jpg' | relative_url }} 600w,
-                 {{ '/author_image_large.jpg' | relative_url }} 900w" 
+         srcset="{{ '/assets/author_image_small.jpg' | relative_url }} 300w,
+                 {{ '/assets/author_image_medium.jpg' | relative_url }} 600w,
+                 {{ '/assets/author_image_large.jpg' | relative_url }} 900w" 
          sizes="(max-width: 600px) 300px, (max-width: 900px) 600px, 900px" 
          alt="{{ author.name }}" 
          itemprop="image" 
