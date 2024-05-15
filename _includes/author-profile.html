@@ -189,6 +189,15 @@
         </li>
       {% endif %}
 
+      {% if author.googlescholar %}
+        <li>
+          <a href="https://scholar.google.com/citations?user={{ author.googlescholar }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+            <img src="{{ '/assets/images/googlescholar_transparent.png' | relative_url }}" alt="Google Scholar" class="social-icon" style="width: 20px; height: 20px; vertical-align: middle;">
+            <span class="label">Google Scholar</span>
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.youtube %}
         {% if author.youtube contains "://" %}
           <li>
