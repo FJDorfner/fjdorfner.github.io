@@ -1,5 +1,115 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Felix Dorfner — medical student at Charité in Berlin, working on AI and radiology.">
+    <title>Felix Dorfner</title>
+    <link rel="canonical" href="https://felixdorfner.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://felixdorfner.com/">
+    <meta property="og:title" content="Felix Dorfner">
+    <meta property="og:description" content="Medical student at Charité in Berlin, working on AI and radiology.">
+    <meta property="og:site_name" content="Felix Dorfner">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Felix Dorfner">
+    <meta name="twitter:description" content="Medical student at Charité in Berlin, working on AI and radiology.">
+    <meta name="twitter:creator" content="@FelixDorfner">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        /* Runs before first paint to avoid a flash of the wrong theme. */
+        (function () {
+            const stored = localStorage.getItem("theme");
+            const theme = stored || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            document.documentElement.dataset.theme = theme;
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Felix Dorfner",
+        "url": "https://felixdorfner.com/",
+        "jobTitle": "Medical Student",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "Charité – Universitätsmedizin Berlin"
+        },
+        "description": "Medical student at Charité in Berlin, working on AI and radiology.",
+        "sameAs": [
+            "https://github.com/fjdorfner",
+            "https://scholar.google.de/citations?user=CnNPqZgAAAAJ",
+            "https://www.linkedin.com/in/felix-dorfner-a93a3520b",
+            "https://twitter.com/FelixDorfner"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <button class="theme-toggle" aria-label="Toggle dark mode" onclick="
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem('theme', next);
+    "><span class="to-dark">dark</span><span class="to-light">light</span></button>
 
+    <main>
+        <h1>Felix Dorfner</h1>
+        <p class="tagline">Medical student at Charité in Berlin, working on AI and radiology.</p>
+
+        <section>
+            <h2>Selected publications</h2>
+            <div class="pub">
+                DBT-DINO: Towards Foundation model based analysis of Digital Breast Tomosynthesis<br>
+                <span class="pub-venue">arXiv · 2025</span> ·
+                <a href="https://arxiv.org/abs/2512.13608" target="_blank" rel="noopener noreferrer">paper</a>
+            </div>
+            <div class="pub">
+                A review of deep learning for brain tumor analysis in MRI<br>
+                <span class="pub-venue">NPJ Precision Oncology · 2025</span> ·
+                <a href="https://doi.org/10.1038/s41698-024-00789-2" target="_blank" rel="noopener noreferrer">paper</a>
+            </div>
+            <div class="pub">
+                Evaluating the effectiveness of biomedical fine-tuning for large language models on clinical tasks<br>
+                <span class="pub-venue">JAMIA · 2025</span> ·
+                <a href="https://doi.org/10.1093/jamia/ocaf045" target="_blank" rel="noopener noreferrer">paper</a>
+            </div>
+            <div class="pub">
+                Comparing commercial and open-source large language models for labeling chest radiograph reports<br>
+                <span class="pub-venue">Radiology · 2024</span> ·
+                <a href="https://doi.org/10.1148/radiol.241139" target="_blank" rel="noopener noreferrer">paper</a>
+            </div>
+            <div class="pub">
+                Scalable drift monitoring in medical imaging AI<br>
+                <span class="pub-venue">arXiv · 2024</span> ·
+                <a href="https://arxiv.org/abs/2410.13174" target="_blank" rel="noopener noreferrer">paper</a>
+            </div>
+            <div class="pub">
+                Anatomy-centred deep learning improves generalisability and progression prediction in radiographic sacroiliitis detection<br>
+                <span class="pub-venue">RMD Open · 2024</span> ·
+                <a href="https://doi.org/10.1136/rmdopen-2024-004628" target="_blank" rel="noopener noreferrer">paper</a>
+            </div>
+            <div class="pub">
+                <span class="pub-venue">Full list on <a href="https://scholar.google.de/citations?user=CnNPqZgAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Connect</h2>
+            <nav class="links">
+                <a href="https://github.com/fjdorfner" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://scholar.google.de/citations?user=CnNPqZgAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/felix-dorfner-a93a3520b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://twitter.com/FelixDorfner" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        Last updated July 2026
+    </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Felix Dorfner">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111111; }
+      .fg { fill: #e8e8e8; }
+    }
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #ffffff; }
+      .fg { fill: #0a0a0a; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32"/>
+  <rect class="fg" x="14" y="7" width="4" height="18"/>
+  <rect class="fg" x="7" y="14" width="18" height="4"/>
+</svg>
